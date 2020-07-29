@@ -37,19 +37,24 @@ Filter out the endless error stack trace before [Pino](https://github.com/pinojs
     reqId: 1
 ```
 
+## Installation
+
+```
+npm i pino-error-stack-filter --save
+```
+
 ## Usage
 
 With default options
 ```js
 const pino = require('pino');
+const errSerializer = require('pino-error-stack-filter');
 
 // these are the default values
-const errorStackSerializerOptions = {
+const errSerializerOptions = {
 	keywords: [ 'node_modules', '(<anonymous>)' ],
 	keepMessage: false
 };
-
-const errorStackSerializer = require('pino-error-stack-filter');
 
 const logger = pino({
 	level: 'error',
@@ -57,7 +62,7 @@ const logger = pino({
 		colorize: true
 	},
 	serializers: {
-		err: errorStackSerializer(errorStackSerializerOptions) // here we go
+		err: errSerializer(errSerializerOptions) // here we go
 	}
 });
 ```
