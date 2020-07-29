@@ -52,18 +52,18 @@ const errSerializer = require('pino-error-stack-filter');
 
 // these are the default values
 const errSerializerOptions = {
-	keywords: [ 'node_modules', '(<anonymous>)' ],
-	keepMessage: false
+    keywords: [ 'node_modules', '(<anonymous>)' ],
+    keepMessage: false
 };
 
 const logger = pino({
-	level: 'error',
-	prettyPrint: {
-		colorize: true
-	},
-	serializers: {
-		err: errSerializer(errSerializerOptions) // here we go
-	}
+    level: 'error',
+    prettyPrint: {
+        colorize: true
+    },
+    serializers: {
+        err: errSerializer(errSerializerOptions) // here we go
+    }
 });
 ```
 
