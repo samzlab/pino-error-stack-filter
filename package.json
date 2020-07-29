@@ -1,0 +1,23 @@
+{
+  "name": "pino-error-stack-filter",
+  "version": "1.0.0",
+  "description": "Filter error stack trace lines in the Pino log",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samzlab/pino-error-stack-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samzlab/pino-error-stack-filter/issues"
+  },
+  "keywords": [
+    "pino",
+    "node",
+    "logger"
+  ],
+  "peerDependencies": {
+    "pino": "^6.4.1"
+  },
+  "author": "SAMZlab",
+  "license": "MIT"
+}
