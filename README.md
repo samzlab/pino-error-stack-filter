@@ -1,4 +1,7 @@
 # Pino error stack filter (pre-serializer)
+![npm](https://img.shields.io/npm/v/pino-error-stack-filter)
+![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/pino-error-stack-filter)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/samzlab/pino-error-stack-filter)
 
 Filter out the endless error stack trace before [Pino](https://github.com/pinojs/pino) streams it out.
 
@@ -73,3 +76,11 @@ const logger = pino({
 | --- | ---- | --- | --- |
 | keywords | `Array<String>` | `[ 'node_modules', '(<anonymous>)' ]` | list of words to filter a line |
 | keepMessage | `Boolean` | `false` | whether to keep the first line which contains the exact same text as the `message` key |
+
+
+
+## License
+
+Copyright © 2020 SAMZLab
+
+Licensed under the [MIT License](https://raw.githubusercontent.com/samzlab/pino-error-stack-filter/master/LICENSE).
